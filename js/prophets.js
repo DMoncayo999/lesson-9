@@ -18,8 +18,8 @@ fetch(requestURL)
         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname; 
         card.appendChild(h2); 
         let p = document.createElement('p');      
-        p.textContent = 'Birthdate: ' + prophets[i].birthdate + ' Death: ' + prophets[i].death; + ' Lenght: ' + prophets[i].lenght;
-        + ' Order: ' + prophets[i].order +' Birthplace: ' + prophets[i].birthplace +  ' Number of Children: ' + prophets[i].numofchildren;
+        p.innerHTML = 'Birthdate: ' + prophets[i].birthdate + '<br/>Death: ' + prophets[i].death + '<br/>Lenght: ' + prophets[i].lenght
+        + '<br/>Order: ' + prophets[i].order +'<br/>Birthplace: ' + prophets[i].birthplace +  '<br/>Number of Children: ' + prophets[i].numofchildren;
         card.appendChild(p);                                             
         let image = document.createElement('img');   
         image.setAttribute('src', prophets[i].imageurl);   
@@ -42,12 +42,7 @@ fetch(requestURL)
   .catch( error => console.log(error) );
 
 
-// load google font
-WebFont.load({
-    google: {
-        families: ["FiraSans", "McLaren", "Oswald"]
-    }
-});
+
 
 //update day and time in webpage
 function updateCurrentDate() {
