@@ -44,7 +44,7 @@ div {
 }
 
 img {
-    width: 250px; height: 300px; 
+    width: 250px; 
     
 }
 
@@ -53,6 +53,7 @@ section  {
     border: 1px solid;
     box-shadow: 5px 2px 5px gray;
     padding-bottom: 5%;
+    background-color: honeydew;
     
 }
 
