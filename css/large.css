@@ -1,0 +1,52 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+/*----------- HEADER --------------*/
+header, nav, main, footer {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/*----------- NAVIGATION --------------*/
+
+nav ul li a {padding: .6rem 1rem;}
+
+/*----------- MAIN --------------*/
+
+.weathersummary {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    
+}
+
+/*---MAIN Gallery.html----*/
+.photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px 10px;
+}
+figure {    
+    margin: 12px;
+}
+figure img {
+    width: 100%;
+}
+
+figure:hover {
+    box-shadow: -12px -12px 12px 0 rgba(255,255,255,1),
+                 12px 12px 12px 0 rgba(0, 0, 0, 0.3); 
+}
+
+figcaption {
+    display: block;
+    text-align: center;
+    padding: 1em;  
+}
+/*-----------FORM-------*/
+
+form label.sbs {
+    padding: .4rem 0;
+} 
+
+
+} /*end large */

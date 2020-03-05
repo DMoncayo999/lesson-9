@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Preston town information">
+<meta name="author" content="Delfina Moncayo">
+
+
+<title>Preston Town Page</title>
+
+<link href="favicon.ico" rel="shortcut icon">
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- Font Style -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans%7CMcLaren%7COswald&display=swap" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+<script src="js/scripts.js" ></script>
+<script>
+    const callbacks = [ banner, updateWindChill ];
+</script>
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<div id="headerWrapper">
+	<header class="clearfix">
+        <img src="images/logoweather.png" alt="sun logo">
+    <div>
+        <h1>Beyond Sunny Days</h1>
+        <h2>Because everyday is different</h2>
+    </div>
+    </header>
+</div>    
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+    <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>  
+        <li><a href="gallery.html">Gallery</a></li> 
+    </ul>
+    </nav>
+</div>
+    
+    
+<!-- CONTENT HERE -->
+<main>
+<div id="alertBanner"></div>
+  
+<section id="hero">
+    <h2>Preston Idaho</h2>
+
+    <div class="herodiv">
+        <picture class="heroPhoto">
+            <source media="(max-width: 200px)" srcset="images/town200.jpg"> 
+            <source media="(max-width: 500px)" srcset="images/town500.jpg">
+            <source media="(max-width: 800px)" srcset="images/town800.jpg">
+            <img src="images/photo-town.jpeg" alt="colorful town">         
+        </picture>
+
+        <section class="weathersummary">
+            <h3>&#127774; Weather Summary</h3>
+            <hr/>
+            <p>Currently: <span>Sunny</span></p>
+            <p>Humidity:  <span>40%</span></p>
+            <p>High Tempeture: <span id="temp">34 &deg;</span></p>
+            <p>Wind Speed:<span id="speed"> 60 mph</span></p>
+            <p>Wind Chill:<span id="chill"></span></p>
+        </section>
+    </div>   
+</section>
+    
+<section id="fiveDayForecast">
+    <h2>Five Day Forecast</h2>
+    <div class="forecast">
+	<div>
+		<h5>Monday</h5>
+		<img src="images/sun-256.png" alt="sunny">
+		<p>75 &#8457;</p>
+    </div>
+    
+	<div>
+		<h5>Tuesday</h5>
+		<img src="images/rain-cloud-256.png" alt="rainy">
+		<p>40  &#8457;</p>
+    </div>
+    
+	<div>
+		 <h5>Wednesday</h5>
+		<img src="images/cloudy-256.png" alt="cloudy">
+		<p>45 &#8457;</p>
+    </div>
+    
+	<div>
+		<h5>Thursday</h5>
+		<img src="images/snow-cloud-256.png" alt="snow day">
+		<p> 30 &#8457;</p>
+    </div>
+
+	<div>
+		<h5>Friday</h5>
+		<img src="images/cloud-256.png" alt="partial cloudy">
+		<p>50 &#8457;</p>
+    </div>
+    </div>
+</section>
+
+<section class="news">
+    <h2>Friendships: Enrich your life and improve your health</h2>
+    <h5>by Mayo Clinic Staff</h5>
+    <img src="images/people.jpeg" alt="young people in a sunset">
+    <p>Good friends are good for your health. Friends can help you celebrate good times and provide support during bad times. Friends prevent loneliness and give you a chance to offer needed companionship, too.<br/><br/> Friends can also:
+        Increase your sense of belonging and purpose; boost your happiness and reduce your stress; improve your self-confidence and self-worth.<br/><br/>
+        Help you cope with traumas, such as divorce, serious illness, job loss or the death of a loved one. Encourage you to change or avoid unhealthy lifestyle habits, such as excessive drinking or lack of exercise.<br/><br/>
+        Friends also play a significant role in promoting your overall health. Adults with strong social support have a reduced risk of many significant health problems, including depression, high blood pressure and an unhealthy body mass index (BMI).<br/><br/> Studies have even found that older adults with a rich social life are likely to live longer than their peers with fewer connections.
+    </p>
+</section>
+
+ <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contactInfo">
+	<div>
+		<h5>Address:</h5>
+		<p>&#128205; 12303 North State<br>Preston, Id 88363<br></p>
+    </div> 
+    <div>
+        <h5>Phone:</h5>
+        <p>&#9742; 123-234-7777</p><br>
+        <h5>Email:</h5>
+        <p>&#128231; beyondsunnydays@ gmail.com</p>
+    </div>
+    <div id="map">
+		<img src="images/map.png" alt="town map">
+    </div> 
+    </div>
+</section>
+
+</main>
+    
+<!-- FOOTER HERE --> 
+<div id="footerWrapper">  
+    <footer>
+        &copy; 2020 - Delfina Moncayo <br/><span>Last Updated:
+            <script> document.write( updateCurrentDate() ) </script></span>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script src="js/webfontload.js" ></script>
+</body>
+</html>

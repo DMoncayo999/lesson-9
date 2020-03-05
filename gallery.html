@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Gallery photos">
+<meta name="author" content="Delfina Moncayo">
+
+
+<title>Gallery Photos</title>
+
+<link href="favicon.ico" rel="shortcut icon">
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- Font Style -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans%7CMcLaren%7COswald&display=swap" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+<script src="js/scripts.js" ></script>
+<script src="js/lazypic.js"></script>
+<script>
+    const callbacks = [ banner, imageLazyLoad ];
+</script>
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<div id="headerWrapper">
+	<header class="clearfix">
+        <img src="images/logoweather.png" alt="sun logo">
+    <div>
+        <h1>Beyond Sunny Days</h1>
+        <h2>Because everyday is different</h2>
+    </div>
+    </header>
+</div>    
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+    <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>  
+        <li class="active"><a href="gallery.html">Gallery</a></li> 
+    </ul>
+    </nav>
+</div>
+    
+    
+<!-- CONTENT HERE -->
+<main>
+<div id="alertBanner"></div>
+  
+<section class="GalleryTitle">
+    <h2>Weather Gallery</h2>
+<div class="photos">
+    <figure>
+        <img src="images/placeholder300x200.png" data-src="images/bluesky300.jpg" alt="sunny sky" /> 
+        <figcaption>Sunny Day</figcaption>
+    </figure>
+    <figure>
+        <img src="images/placeholder300x200.png" data-src="images/rainboots300.jpg" alt="boots and pink umbrella" /> 
+        <figcaption>Boots and Umbrella</figcaption>
+    </figure>
+    <figure>
+        <img src="images/placeholder300x200.png" data-src="images/cloudy300.jpg" alt="cloudy day" /> 
+        <figcaption>Cloudy Day</figcaption>
+    </figure>
+    <figure>
+        <img src="images/placeholder300x200.png" data-src="images/rainbowfield300.jpg" alt="rainbow in the sky" />
+        <figcaption>Beautiful Rainbow</figcaption>
+    </figure>
+    <figure>
+        <img src="images/placeholder300x200.png" data-src="images/rainystreet300.jpg" alt="srainy day in dowtown" />
+        <figcaption>Raining in the city</figcaption>
+    </figure>
+    <figure>
+        <img src="images/placeholder300x200.png" data-src="images/snowgirl300.jpg" alt="woman blowing snow" />
+        <figcaption>Enjoying the snow</figcaption>
+    </figure>
+    <figure>
+        <img src="images/placeholder300x200.png" data-src="images/sunnybeach300.jpg" alt="sunny day at the beach" />
+        <figcaption>Go to the beach</figcaption>
+    </figure>
+    <figure>
+        <img src="images/placeholder300x200.png" data-src="images/snowtree300.jpg" alt="trees with snow" />
+        <figcaption>Trees cover with snow</figcaption>
+    </figure>
+    <figure>
+        <img src="images/placeholder300x200.png" data-src="images/thunder300.jpg" alt="thunder storm" />
+        <figcaption>Thunder storm comming</figcaption>
+    </figure>
+</div>
+   
+</section>
+
+</main>
+    
+<!-- FOOTER HERE --> 
+<div id="footerWrapper">  
+    <footer>
+        &copy; 2020 - Delfina Moncayo <br/><span>Last Updated:
+            <script> document.write( updateCurrentDate() ) </script></span>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script src="js/webfontload.js" ></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Home Page">
+<meta name="author" content="Delfina Moncayo">
+
+
+<title>Home Weather Site</title>
+
+<link href="favicon.ico" rel="shortcut icon">
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- Font Style -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans%7CMcLaren%7COswald&display=swap" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+<script src="js/scripts.js" ></script>
+<script>
+    const callbacks = [ banner ];
+</script>
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<div id="headerWrapper">
+	<header class="clearfix">
+        <img src="images/logoweather.png" alt="sun logo">
+    <div>
+        <h1>Beyond Sunny Days</h1>
+        <h2>Because everyday is different</h2>
+    </div>
+    </header>
+</div>    
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+    <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>  
+        <li><a href="gallery.html">Gallery</a></li> 
+    </ul>
+    </nav>
+</div>
+    
+    
+<!-- CONTENT HERE -->
+<main>
+<div id="alertBanner"></div>
+  
+<!-- MAIN HERE -->
+    <main>
+        <div class="townsInfo"></div>
+    </main>
+    
+
+</main>
+    
+<!-- FOOTER HERE --> 
+<div id="footerWrapper">  
+    <footer>
+        &copy; 2020 - Delfina Moncayo <br/><span>Last Updated:
+            <script> document.write( updateCurrentDate() ) </script></span>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script src="js/webfontload.js" ></script>
+</body>
+</html>
