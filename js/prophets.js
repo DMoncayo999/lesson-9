@@ -18,8 +18,7 @@ fetch(requestURL)
         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname; 
         card.appendChild(h2); 
         let p = document.createElement('p');      
-        p.innerHTML = 'Birthdate: ' + prophets[i].birthdate + '<br/>Death: ' + prophets[i].death + '<br/>Length: ' + prophets[i].length
-        + '<br/>Order: ' + prophets[i].order +'<br/>Birthplace: ' + prophets[i].birthplace +  '<br/>Number of Children: ' + prophets[i].numofchildren;
+        p.innerHTML = 'Date of Birth: ' + prophets[i].birthdate + '<br/>Place of Birth: ' + prophets[i].birthplace;
         card.appendChild(p);                                             
         let image = document.createElement('img');   
         image.setAttribute('src', prophets[i].imageurl);   
