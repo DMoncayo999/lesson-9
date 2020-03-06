@@ -12,15 +12,15 @@ body {
     color: #333;
     background-color: #eeeeee;
 }
-   
-    
+
+
 
 /*----------- HEADER --------------*/
-div#headerWrapper {background-color:#ffff60;} 
+div#headerWrapper {background-color:#ffff60;}
 
 header {
     padding: .5rem 0 .5rem 2%;
-    
+
 }
 header img {float: left; margin-right: 10px; width: 50px;}
 header h1, header h2 {margin: 0}
@@ -40,10 +40,10 @@ nav button {
     color: white;
 }
 nav {
-    
+
     font-family: Verdana, sans-serif;
 }
-nav ul { 
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -77,23 +77,23 @@ nav ul.hide {display:none;}
     animation-duration: 10s;
 }
 
-main {    
+main {
     min-height: 10rem;
 }
 
 main h2 {
-        text-align:center; 
+        text-align:center;
 }
 
 .herodiv {
     position: relative;
-    width: 100%;    
+    width: 100%;
 }
 
 picture.heroPhoto {
     display: block;
     margin: 0 2%;
-    width: 96%;  
+    width: 96%;
 }
 main picture.heroPhoto img {width:100%;}
 
@@ -224,7 +224,7 @@ input#rating{
     color: #555;
 
 }
- 
+
 form input.submitBtn {
     border: none;
     background-color: #9c2c13;
@@ -255,26 +255,24 @@ div.townsInfo {
 
 .townsInfo h2 {
     font-family: McLaren;
-    color: #9c2c12; 
+    color: #9c2c12;
 }
 
 .townsInfo h3{
     font-family: Fira Sans;
-    color:  #af4642; 
+    color:  #af4642;
 }
 
 .townsInfo section {
     box-shadow: 5px 2px 5px rgb(162, 173, 128);
     background-color: rgb(228, 250, 148);
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     text-align: center;
     padding-top: 20px;
-      
 }
 .townsInfo img {
     width: 100%;
-    padding-top: 30px;
 }
 
  /*----------MAIN medium css-------------*/
@@ -283,14 +281,19 @@ div.townsInfo {
 
         div.townsInfo {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-        } 
-        div.townsInfo section img {
-            grid-row: 1 / 6;        
+            grid-template-columns: 1fr;
         }
-        div.townsInfo :nth-child(2) :nth-child(6) {
-            grid-column: 2 / 3;
-        } 
+        div.townsInfo section {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+        }
+        div.townsInfo section img {
+          grid-area: 1 / 2 / 4 / 3;
+        }
+        div.townsInfo :nth-child(2) :nth-child(4) {
+          grid-area: 1 / 1 / 4 / 2;
+        }
 
 }
 /*----------MAIN larg css-------------*/
@@ -301,19 +304,20 @@ div.townsInfo {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 35px;
-        
     }
-    .townsInfo section {
-            padding-top: 20px;
+    div.townsInfo section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr 3fr;
     }
-    .townsInfo h3 {
-            font-size: 14px;
+    div.townsInfo h3 {
+        font-size: 1rem;
     }
-    .townsInfo img {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 0;
-
+    div.townsInfo section img {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+    div.townsInfo :nth-child(2) :nth-child(4) {
+      grid-area: 4 / 1 / 5 / 2;
     }
 }
 /*----------- FOOTER --------------*/
@@ -336,4 +340,3 @@ footer span {
     display: table;
     clear: both;
   }
-
