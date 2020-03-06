@@ -269,57 +269,12 @@ div.townsInfo {
     /* justify-content: center;
     align-items: center; */
     text-align: center;
-    padding-top: 20px;
 }
 .townsInfo img {
     width: 100%;
 }
 
- /*----------MAIN medium css-------------*/
-/* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 40rem) {
 
-        div.townsInfo {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-        div.townsInfo section {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
-        }
-        div.townsInfo section img {
-          grid-area: 1 / 2 / 4 / 3;
-        }
-        div.townsInfo :nth-child(2) :nth-child(4) {
-          grid-area: 1 / 1 / 4 / 2;
-        }
-
-}
-/*----------MAIN larg css-------------*/
-/* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64rem) {
-
-    div.townsInfo {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 35px;
-    }
-    div.townsInfo section {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 2fr 3fr;
-    }
-    div.townsInfo h3 {
-        font-size: 1rem;
-    }
-    div.townsInfo section img {
-      grid-area: 4 / 1 / 5 / 2;
-    }
-    div.townsInfo :nth-child(2) :nth-child(4) {
-      grid-area: 4 / 1 / 5 / 2;
-    }
-}
 /*----------- FOOTER --------------*/
 
 #footerWrapper {background-color:#ffff60;}

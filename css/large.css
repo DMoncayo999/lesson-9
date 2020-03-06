@@ -48,5 +48,27 @@ form label.sbs {
     padding: .4rem 0;
 } 
 
+/*----json HOME PAGE -------*/
+
+div.townsInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 35px;
+}
+div.townsInfo section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 3fr;
+}
+div.townsInfo h3 {
+    font-size: 1rem;
+}
+div.townsInfo section img {
+  grid-area: 4 / 1 / 5 / 2;
+}
+div.townsInfo :nth-child(2) :nth-child(4) {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
 
 } /*end large */

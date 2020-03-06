@@ -102,6 +102,24 @@ figure {
     margin: 10px;
 }
 
+/*----------- json Home Page --------------*/
+div.townsInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+div.townsInfo section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+div.townsInfo section img {
+  grid-area: 1 / 2 / 4 / 3;
+}
+div.townsInfo :nth-child(2) :nth-child(4) {
+  grid-area: 1 / 1 / 4 / 2;
+}
+    
+
 /*----------- FOOTER --------------*/
 
 
