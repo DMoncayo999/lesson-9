@@ -245,6 +245,77 @@ form label.top input:required:valid {
 
 }
 
+/*------ TOWNS JSON Home page -------------*/
+div.townsInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin: 2%;
+}
+
+.townsInfo h2 {
+    font-family: McLaren;
+    color: #9c2c12; 
+}
+
+.townsInfo h3{
+    font-family: Fira Sans;
+    color:  #af4642; 
+}
+
+.townsInfo section {
+    box-shadow: 5px 2px 5px rgb(162, 173, 128);
+    background-color: rgb(228, 250, 148);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+      
+}
+.townsInfo img {
+    width: 100%;
+    padding-top: 30px;
+}
+
+ /*----------MAIN medium css-------------*/
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 40rem) {
+
+        div.townsInfo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        } 
+        div.townsInfo section img {
+            grid-row: 1 / 6;        
+        }
+        div.townsInfo :nth-child(2) :nth-child(6) {
+            grid-column: 2 / 3;
+        } 
+
+}
+/*----------MAIN larg css-------------*/
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    div.townsInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 35px;
+        
+    }
+    .townsInfo section {
+            padding-top: 20px;
+    }
+    .townsInfo h3 {
+            font-size: 14px;
+    }
+    .townsInfo img {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 0;
+
+    }
+}
 /*----------- FOOTER --------------*/
 
 #footerWrapper {background-color:#ffff60;}

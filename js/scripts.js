@@ -76,10 +76,10 @@ fetch(requestURL)
     // console.table(jsonObject);   ----checking for valid response and data parsing---
     //store the results of the converted response into an array
 const towns = jsonObject['towns'];
+        let count = 0; 
     //To produce the output. We create a loop
     for (let i = 0; i < towns.length; i++ ) {
       if (towns[i].name === "Preston" || towns[i].name === "Fish Haven" || towns[i].name === "Soda Springs") {
-        
         let card = document.createElement('section');
         let h2 = document.createElement('h2');      
         h2.textContent = towns[i].name; 
@@ -88,12 +88,17 @@ const towns = jsonObject['towns'];
         h3.textContent = towns[i].motto;
         card.appendChild(h3);
         let p = document.createElement('p');      
-        p.innerHTML = 'Current Population: ' + towns[i].currentPopulation + '<br/>Year Founded: ' 
-        + towns[i].yearFounded + '<br/>Average Rainfall: ' + towns[i].averageRainfall;
+        p.innerHTML = 'Current Population: ' + towns[i].currentPopulation + '<br/><br/>Year Founded: ' 
+        + towns[i].yearFounded + '<br/><br/>Average Rainfall: ' + towns[i].averageRainfall;
         card.appendChild(p);                                             
         let image = document.createElement('img');   
-        image.setAttribute('src', 'images/' + towns[i].photo);   
-        image.setAttribute('alt', towns[i].name);  
+        image.setAttribute('src', 'images/' + towns[i].photo); 
+        image.setAttribute('alt', towns[i].name); 
+        count += 1; 
+            if (count % 2 == 0)
+            image.setAttribute ('class', 'cls_right');
+            else
+            image.setAttribute ('class', 'cls_left');
         card.appendChild(image);
 
         document.querySelector('div.townsInfo').appendChild(card);

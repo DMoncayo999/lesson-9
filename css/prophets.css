@@ -53,10 +53,37 @@ section  {
     box-shadow: 5px 2px 5px gray;
     padding-bottom: 5%;
     background-color: honeydew;
-    
+       
+}
+ /*----------MAIN medium css-------------*/
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 40rem) {
+  
+   
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-column-gap: 10px;
 }
 
+}
+    
+/*----------MAIN larg css-------------*/
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
 
+section {
+        padding: 5px 15px 10px 15px;
+} 
+    
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}    
+
+}
+  
 /*----------- FOOTER --------------*/
 
 #footerWrapper {background-color:#ffff60;}
@@ -69,30 +96,4 @@ footer {
 
 footer span {
     color:#af4642;
-}
-
-
-/* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 40rem) {
-  
-/*----------MAIN medium css-------------*/
-div.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    grid-column-gap: 10px;
-}
-}
-
-
-/* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64rem) {
-  
-/*----------MAIN larg css-------------*/
-    
-div.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  
-}    
 }
