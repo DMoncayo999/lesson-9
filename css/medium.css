@@ -118,7 +118,26 @@ div.townsInfo section img {
 div.townsInfo :nth-child(2) :nth-child(4) {
   grid-area: 1 / 1 / 4 / 2;
 }
-    
+
+
+div.trendingNews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+}
+
+.trendwrap {
+    background:  rgb(228, 250, 148);
+    margin: 10px;
+    box-shadow: 0 0 10px gray;
+    padding-bottom:2rem;
+}
+
+.trendwrap h2 {
+    text-align: left;
+    padding: 1em;
+}
+
 
 /*----------- FOOTER --------------*/
 

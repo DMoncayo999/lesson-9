@@ -266,12 +266,24 @@ div.townsInfo {
 .townsInfo section {
     box-shadow: 5px 2px 5px rgb(162, 173, 128);
     background-color: rgb(228, 250, 148);
-    /* justify-content: center;
-    align-items: center; */
     text-align: center;
 }
 .townsInfo img {
     width: 100%;
+}
+
+.trendingNews p {
+    color: blue;
+    font-size: 1em;
+    text-align: center;
+}
+.trendingNews img {
+    width :200px; height: 112px;
+}
+
+.trendwrap h2 {
+    padding-top: 1rem;
+    color: #af4642;
 }
 
 
